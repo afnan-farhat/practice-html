@@ -1,0 +1,70 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <title>My form</title>
+        <meta name="description" content="This is my code as HTML and CSS">
+    </head>
+
+    <body>
+
+        <h1>Add/Delete Course</h1>
+        <form method="post" action="">
+            <label id="university" vlaue="University">University ID</label>
+            <input type="text" value="123456" name="university"></input>
+
+            <br><br>
+            <label id="name" vlaue="Name">Name</label>
+            <input type="text" value="Afnan" name="name"></input>
+            <br><br>
+
+            <label id="email" vlaue="Email">Email</label>
+            <input type="text" value="example@gmail.com" name="email"></input>
+            <br><br>
+            <label id="radio"><b>Request Type:</b></label>
+            <br>
+
+            <input type="radio" name="request" value="Add" checked> Add
+            <input type="radio" name="request" value="Delete">Delete
+
+            <br>
+            <br>
+            <label id="cpit 498"><b>Choose Course:</b></label>
+            <br>
+            <input id="requset" type="checkbox" name="checkbox" value="CPIT 498">CPIT 498</input>
+            <br>
+
+            <input id="requset" type="checkbox" name="checkbox" value="CPIT 405">CPIT 405</input>
+            <br>
+
+            <input id="requset" type="checkbox" name="checkbox" value="CPIT 470">CPIT 470</input>
+
+
+            <br><br>
+            <label id="cpit 498"><b>Your Level:</b></label>
+
+            <select name="level" id="level">
+                <option value="1" >Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+                <option value="6">Level 6</option>
+                <option value="7">Level 7</option>
+                <option value="8">Level 8</option>
+                <option value="9" selected>Level 9</option>
+                <option value="10">Level 10</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input type="submit"></input>
+            <input type="reset" value="Clear"></input>
+
+
+        </form>
+
+    </body>
+
+    </html>

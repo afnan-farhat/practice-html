@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My form</title>
+    <meta name="description" content="This is my code as HTML and CSS">
+</head>
+
+<body>
+
+    <h1>Add/Delete Course</h1>
+
+    <form method="post" action="" onreset="myFunction()">
+        <label for="myInput">University ID</label>
+        <input type="text" id="myInput" value="123456" name="university" onfocus=myFocusFunction(this.id)
+            onblur=myBlurFunction(this.id)>
+
+        <br><br>
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" value="Afnan" name="name" onfocus=myFocusFunction(this.id)
+            onblur=myBlurFunction(this.id)>
+
+        <br><br>
+        <label for="emailInput">Email</label>
+        <input type="text" id="emailInput" value="example@gmail.com" name="email" onfocus=myFocusFunction(this.id)
+            onblur=myBlurFunction(this.id)>
+
+        <br><br>
+        <label><b>Request Type:</b></label><br>
+        <input type="radio" name="request" value="Add" checked> Add
+        <input type="radio" name="request" value="Delete"> Delete
+
+        <br><br>
+        <label><b>Choose Course:</b></label><br>
+        <input type="checkbox" name="checkbox" value="CPIT 498"> CPIT 498 <br>
+        <input type="checkbox" name="checkbox" value="CPIT 405"> CPIT 405 <br>
+        <input type="checkbox" name="checkbox" value="CPIT 470"> CPIT 470 <br>
+
+        <br><br>
+        <label for="level"><b>Your Level:</b></label>
+        <select name="level" id="level">
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+            <option value="6">Level 6</option>
+            <option value="7">Level 7</option>
+            <option value="8">Level 8</option>
+            <option value="9" selected>Level 9</option>
+            <option value="10">Level 10</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit">
+
+
+        <input type="reset" value="Clear">
+
+
+
+    </form>
+
+    <script>
+        function myFocusFunction(x) {
+            if (x == "myInput" || x == "nameInput" || x == "emailInput") {
+                document.getElementById(x).style.backgroundColor = "lightblue";
+
+            } 
+        }
+
+        function myBlurFunction(x) {
+            if (x == "myInput" || x == "nameInput" || x == "emailInput") {
+                document.getElementById(x).style.backgroundColor = "lightgreen";
+
+            }
+
+        }
+
+        function myFunction() {
+            document.body.style.backgroundColor = "Lavender";
+
+
+        }
+
+        function alertFunction() {
+            alert("This session is about to end");
+
+        }
+        setInterval(alertFunction, 7000)
+
+    </script>
+
+</body>
+
+</html>
